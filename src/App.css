@@ -1,10 +1,20 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.row {
+  margin: 18px 0;
+}
+
+.item-button {
+  float: right;
+  margin: 0 2px;
+}
+
+.edit-form {
+  width: 60% !important;
+  display: inline !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
