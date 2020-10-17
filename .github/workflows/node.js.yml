@@ -44,6 +44,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn
+    - run: export PATH="$PATH:$(yarn global bin)"
     - run: yarn global add serverless
     - run: serverless config credentials --provider aws --key ${{ secrets.AWS_ACCESS_KEY_ID }} --secret ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - run: serverless deploy
